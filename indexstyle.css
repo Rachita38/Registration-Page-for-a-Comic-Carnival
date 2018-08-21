@@ -1,0 +1,29 @@
+html, body
+{
+                  height: 100%;
+                  width: 100%;
+                  padding: 0;
+                  margin: 0;
+                  background:url("background.jpg");
+                  -webkit-background-size: cover;
+                  -moz-background-size: cover;
+                  -o-background-size: cover;
+                  background-size: cover;
+    }
+
+form
+{
+color:white;
+font-family: 'Kaushan Script', cursive; 
+font-size:25px;
+background:-ms-linear-gradient(bottom,rgba(191,185,184,0),rgba(95,87,86,0.4));
+background:-webkit-linear-gradient(bottom,rgba(191,185,184,0),rgba(95,87,86,0.4));
+background:-moz-linear-gradient(bottom,rgba(191,185,184,0),rgba(95,87,86,0.4)); 
+}
+
+h2,h3
+{
+color:white;
+font-family: 'Kaushan Script', cursive; 
+font-size:30px;  
+}
