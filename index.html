@@ -11,16 +11,23 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       
+<!-- The CSS styles applied by me -->
   <link href="indexstyle.css" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-
-   
+ <!-- Google Web Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+      
+   <script src="lib/typed.js"></script>
+  
   </head>
   <body>
 <div class="container">
-  
+
+<div id="typed-strings">
   <h2>#Comic Carnival</h2>
   <h3>India's first online Comic fan fest</h3>
+</div>
+    
+    <span id="typed"></span>
 
 <div class="row">
     <div class="col-xs-6 col-md-7">
@@ -28,45 +35,56 @@
     </div>
     
     <div class="col-xs-6 col-md-5">
-    <form action="/action_page.php">
-   
-     <div class="form-group">
-      <label for="name">Name:</label>
-      <input type="text" class="form-control" id="name" placeholder="Enter Name" name="Full name">
-     </div>
-      
-      
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email1">
-    </div>
     
-    <div class="form-group">
-      <label for="whatsapp">Whatsapp:</label>
-      <input type="text" class="form-control" id="whatsapp" placeholder="Enter Whatsapp number" name="whatsapp1">
-    </div>
-    
-      <label>Language:</label>
-      <select class="form-control">
-        <option>Hindi</option>
-        <option>English</option>
-        <option>Marathi</option>
-        <option>Tamil</option>
-      </select>
-    
-      
-         <label>Genre:</label>
-          <select class="form-control">
-            <option>Indian Mythology</option>
-            <option>Fiction</option>
-          </select>
-      <br/>
-    <button type="submit" class="btn btn-default">Submit</button>
-  </form>
+        <form action="/action_page.php">
+
+             <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter Name" name="Full name">
+             </div>
+
+
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email1">
+            </div>
+
+            <div class="form-group">
+              <label for="whatsapp">Whatsapp:</label>
+              <input type="text" class="form-control" id="whatsapp" placeholder="Enter Whatsapp number" name="whatsapp1">
+            </div>
+
+              <label>Language:</label>
+              <select class="form-control">
+                <option>Hindi</option>
+                <option>English</option>
+                <option>Marathi</option>
+                <option>Tamil</option>
+              </select>
+
+
+                 <label>Genre:</label>
+                  <select class="form-control">
+                    <option>Indian Mythology</option>
+                    <option>Fiction</option>
+                  </select>
+              <br/>
+            <button type="submit" class="btn btn-default">Submit</button>
+      </form>
     </div>
 </div>
 
 </div>
+      
+<script>
+  var typed = new Typed('#typed', {
+                stringsElement: '#typed-strings',
+                typeSpeed:100,
+                backSpeed:100,
+                loop:true
+        
+    });
+</script>
   
   </body>
 </html>
